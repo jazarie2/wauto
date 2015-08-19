@@ -8,6 +8,25 @@
     "inports": {},
     "outports": {},
     "groups": [],
-    "processes": {},
-    "connections": []
+    "processes": {
+        "wauto-test/mysql-read_l9924": {
+            "component": "wauto-test/mysql-read",
+            "metadata": {
+                "label": "wauto-test/mysql-read",
+                "x": 360,
+                "y": 180,
+                "width": 72,
+                "height": 72
+            }
+        }
+    },
+    "connections": [
+        {
+            "data": "START",
+            "tgt": {
+                "process": "wauto-test/mysql-read_l9924",
+                "port": "in"
+            }
+        }
+    ]
 }
